@@ -1,0 +1,298 @@
+@import "https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  list-style: none;
+  text-align: right;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #1a7ace;
+  --font-size-base: 1.2em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f8f8f8;
+  background-position: center;
+  background-size: cover;
+}
+
+/* the Login page design Start */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 25%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.127);
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+.logo img {
+  width: 80px;
+  height: auto;
+}
+.form-box {
+  position: relative;
+  background: transparent;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.127);
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+}
+
+.left-side img {
+  max-width: 340px;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.right-side {
+  flex: 1;
+  border-top: 1.7px solid #008498;
+  border-right: 1.7px solid #008498;
+  border-bottom: 1.7px solid #008498;
+  border-radius: 0 10px 10px 0;
+  align-items: center;
+  display: flex;
+}
+
+.titel {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-align: right;
+  color: #fa9900;
+}
+
+.form-value {
+  padding: 30px; /* Increased padding */
+  height: 100%;
+}
+
+.inputbox {
+  display: flex;
+  position: relative;
+  margin: 40px 0; /* Increased margin */
+  width: 350px; /* Increased width */
+  height: 50px; /* Increased height */
+  border: 1px solid #002ea478;
+  align-items: center;
+  border-radius: 15px; /* Increased border-radius */
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 15px; /* Increased right spacing */
+  transform: translateY(-50%);
+  color: #7a7a7a7c;
+  font-size: 1em; /* Increased font size */
+  pointer-events: none;
+  transition: all 0.2s;
+  opacity: 100%;
+}
+
+.inputbox input[type="password"],
+.inputbox input[type="Email"] {
+  font-family: "Poppins", sans-serif;
+  color: rgba(38, 38, 38, 0.72);
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  opacity: 0;
+  left: -20px;
+}
+
+.inputbox input {
+  text-align: left;
+  width: 100%;
+  height: 60px; /* Increased height */
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2em; /* Increased font size */
+  padding: 0 10px 0 10px; /* Increased padding */
+}
+
+.forget {
+  margin: -20px 0 20px; /* Increased margin */
+  font-size: 1.1em; /* Increased font size */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px; /* Increased margin */
+}
+
+.forget label {
+  color: #7a7a7aea;
+}
+
+.forget label input {
+  margin-right: 12px; /* Increased margin */
+}
+
+.forget a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 600s;
+
+  margin-left: 30px; /* Increased margin */
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+
+.btn span {
+  width: 80px; /* Increased width */
+  height: 2px; /* Increased height */
+}
+
+.btn .left-line {
+  background: linear-gradient(to right, transparent, var(--main-color));
+}
+
+.btn .right-line {
+  background: linear-gradient(to left, transparent, var(--main-color));
+}
+
+.btn button {
+  padding: 8px 25px 8px 25px; /* Increased padding */
+  background: var(--main-color);
+  border-radius: 50px; /* Increased border-radius */
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em; /* Increased font size */
+  border-style: solid;
+  border: 0;
+  font-weight: 700;
+  transition: all 0.5s;
+  margin: 0 15px 0 15px; /* Increased margin */
+}
+
+.btn button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  font-size: 1.1em; /* Increased font size */
+  text-align: center;
+  margin: 30px 0 15px; /* Increased margin */
+}
+
+.register p {
+  color: #7a7a7aea;
+}
+
+.register a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 600s;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* the Login page design End */
+
+/* the password-forget page start */
+
+.forget-box {
+  background: transparent;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.127);
+  background-color: white;
+  display: flex;
+  border-radius: 15px; /* Increased border-radius */
+  margin-bottom: 60px; /* Increased margin */
+}
+
+.forget-value {
+  padding: 30px; /* Increased padding */
+  height: 100%;
+}
+
+.warning {
+  margin-bottom: 15px; /* Increased margin */
+}
+
+.additional-info {
+  color: #808080; /* Gray color */
+  text-align: right;
+  font-size: 1em; /* Increased font size */
+  color: #7a7a7a;
+}
+
+.reset-btn button {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0; /* Increased padding */
+  border-radius: 15px;
+  cursor: pointer;
+  background: var(--main-color);
+  border: none;
+  transition: all 0.5s;
+}
+.reset-btn button a {
+  font-size: 1.2em; /* Increased font size */
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cby-ryt {
+  color: #666666b0;
+}
+
+.Agree {
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.Agree a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+.Agree a:hover {
+  text-decoration: underline;
+}
+/* the password-forget page end */

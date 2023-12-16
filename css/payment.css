@@ -1,0 +1,437 @@
+@import "https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  list-style: none;
+  text-align: right;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #f2f2f2;
+  --Sec-color: #d9dadb;
+  --text-color: rgb(5, 5, 34);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  gap: 50px;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--main-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+.arrow ion-icon {
+  font-size: 2em;
+  color: #0b3e91;
+  transition: all 0.5s;
+}
+.arrow a {
+  display: flex;
+}
+.arrow:hover ion-icon {
+  transform: rotateZ(360deg);
+}
+.container {
+  display: flex;
+
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 30px 10px 10px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.127);
+}
+
+.main-content {
+  display: flex;
+  border-radius: 30px 10px 10px 30px;
+}
+
+.visa-card {
+  background-color: var(--main-color);
+  padding: 20px;
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+
+.p {
+  width: 100%;
+}
+
+.p p {
+  color: var(--text-color);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title h3 {
+  color: #0b3e91;
+  font-size: 1.3em;
+  height: 100%;
+}
+
+.title .icon {
+  color: #0062ff;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05));
+  font-size: 1.5em;
+}
+
+.p p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.card-types {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.type {
+  display: flex;
+  width: 90px;
+  height: 70px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e3e5;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.type:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  background-color: var(--Sec-color);
+}
+
+.type img {
+  width: 80px;
+}
+
+.type p {
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(5, 5, 34);
+}
+
+.details-input {
+  width: 100%;
+}
+
+.inputbox input[type="text"] {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.inputbox {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 40px;
+  background-color: var(--Sec-color);
+  align-items: center;
+  border-radius: 6px;
+}
+
+.inputbox label {
+  position: absolute;
+  top: -28px;
+  right: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.inputbox input {
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 5px 0 5px;
+}
+
+::placeholder {
+  color: rgba(5, 5, 34, 0.3);
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.name .inputbox {
+  width: 100%;
+}
+
+.dates {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dates .inputbox {
+  width: 50%;
+}
+
+.visa-card hr {
+  margin: 10px auto;
+  width: 100%;
+  border: 1px solid var(--Sec-color);
+}
+
+.detail-p {
+  display: flex;
+  flex-direction: column;
+}
+
+.det {
+  display: flex;
+  justify-content: space-between;
+}
+
+.det p {
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+button {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  margin-top: 15px;
+  background-color: #0b3e91;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  background-color: #1358c8;
+}
+
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)),
+    url("../imgs/back4.jpeg");
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.titles {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.titles h3 {
+  color: var(--main-color);
+  font-size: 2.3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.titles span {
+  color: #fd8f1c;
+}
+
+.titles .hr:first-child {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background: linear-gradient(to right, transparent, var(--main-color));
+  margin: 10px 0;
+}
+
+.titles .hr:last-child {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background: linear-gradient(to left, transparent, var(--main-color));
+  margin: 10px 0;
+}
+
+.titles {
+  text-align: right;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.cards .card {
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.cards .card .imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.cards .card .imgs .img {
+  width: 120px;
+  height: 40%;
+  background: url("../imgs/ema.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.cards .card .imgs .img:last-child {
+  background: url("../imgs/ema2.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cards .card:last-child .imgs .img {
+  background: url("../imgs/moroco.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cards .card:last-child .imgs .img:last-child {
+  background: url("../imgs/moroco2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.cards .card .detailss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.cost {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.cards .card .detailss h3 {
+  color: #fd8f1c;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 1.3em;
+}
+
+.cards .card .detailss p {
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.cards .card .detailss p span {
+  color: #0062ff;
+}
+
+.cards .card .detailss h2 {
+  font-size: 1.5em;
+  color: #0062ff;
+}
+
+.cost span {
+  color: #7a7a7aea;
+  text-decoration: line-through;
+  font-size: 1em;
+  line-height: 8px;
+}
+
+.cards .card .detailss button {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.secure {
+  line-height: 40px;
+}
+
+.secure h1,
+h2 {
+  color: var(--main-color);
+  text-align: center;
+}
+
+.secure h1 {
+  font-size: 2.5em;
+}
+
+.secure h2 span {
+  font-family: "Noto Nastaliq Urdu", serif;
+  color: #fd8f1c;
+  font-size: 1.3em;
+}
